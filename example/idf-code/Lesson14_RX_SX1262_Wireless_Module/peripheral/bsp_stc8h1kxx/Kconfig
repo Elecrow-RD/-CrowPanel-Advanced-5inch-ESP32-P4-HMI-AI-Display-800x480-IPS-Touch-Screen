@@ -1,0 +1,23 @@
+menu "BSP STC8H1KXX Setup"
+
+    config BSP_STC8H1KXX_ENABLED
+        depends on BSP_I2C_ENABLED
+        bool "Enable STC8H1KXX chip"
+        default y
+
+    if BSP_STC8H1KXX_ENABLED
+
+        config BSP_STC8H1KXX_BATTERY_ENABLED
+            bool "Enable STC8H1KXX battery detect"
+            default y
+
+        config BSP_STC8H1KXX_GPIO_ENABLED
+            bool "Enable STC8H1KXX gpio control"
+            default y
+        
+        config BSP_STC8H1KXX_PWM_ENABLED
+            bool "Enable STC8H1KXX pwm control"
+            default y
+
+    endif
+endmenu

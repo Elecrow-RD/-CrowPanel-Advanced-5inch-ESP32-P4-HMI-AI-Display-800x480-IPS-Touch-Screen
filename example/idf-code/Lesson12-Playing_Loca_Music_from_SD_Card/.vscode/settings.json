@@ -1,0 +1,10 @@
+{
+    "idf.flashType": "UART",
+    "idf.portWin": "COM14",
+    "idf.espIdfPathWin": "j:\\My_APP\\IDF_MY\\v5.4.2\\esp-idf",
+    "idf.toolsPathWin": "j:\\My_APP\\IDF_MY\\TOOL",
+    "idf.pythonInstallPath": "j:\\My_APP\\IDF_MY\\TOOL\\tools\\idf-python\\3.11.2\\python.exe",
+    "files.associations": {
+        "bsp_stc8h1kxx.h": "c"
+    }
+}
