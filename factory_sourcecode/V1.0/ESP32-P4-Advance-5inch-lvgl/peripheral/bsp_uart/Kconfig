@@ -1,0 +1,7 @@
+menu "BSP UART Setup"
+
+    config BSP_UART_ENABLED
+        bool "Enable UART"
+        default y
+
+endmenu
