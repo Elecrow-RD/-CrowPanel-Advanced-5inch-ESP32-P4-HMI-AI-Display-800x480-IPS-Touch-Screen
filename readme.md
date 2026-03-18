@@ -17,7 +17,7 @@
 | Memory                                       | 128 KB ROM (HP) 16 KB ROM (LP) 16 MB Flash                   |
 | Development Environment                      | ESP-IDF、Arduino IDE                                         |
 | **Screen**                                   |                                                              |
-| Size                                         | 7.0 inch                                                     |
+| Size                                         | 5.0 inch                                                     |
 | Resolution                                   | 1024*600                                                     |
 | Display Panel                                | IPS Panel                                                    |
 | Touch Panel                                  | Capacitive Touch, Single/5-point Touch                       |
