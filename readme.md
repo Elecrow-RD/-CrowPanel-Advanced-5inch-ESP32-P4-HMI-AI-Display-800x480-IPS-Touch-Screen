@@ -104,5 +104,112 @@
 
 
 ### 7,Pin definition
+ESP32-P4 5 inch and IPS Display Wiring Pins:
+
+<img width="657" height="778" alt="image" src="https://github.com/user-attachments/assets/676326bc-5676-49b5-a047-4412eb6f06b8" />
+
+
+RGB Pin connection
+
+
+// Refresh Rate = 18000000/(1+40+20+800)/(1+10+5+480) = 42Hz
+#define RGB_LCD_PIXEL_CLOCK_HZ     (18 * 1000 * 1000)
+#define RGB_LCD_H_RES              H_size
+#define RGB_LCD_V_RES              V_size
+#define RGB_LCD_HSYNC              4
+#define RGB_LCD_HBP                8
+#define RGB_LCD_HFP                8
+#define RGB_LCD_VSYNC              4
+#define RGB_LCD_VBP                16
+#define RGB_LCD_VFP                16
+
+#define RGB_PIN_NUM_DISP_EN        -1
+#define RGB_PIN_NUM_HSYNC          40
+#define RGB_PIN_NUM_VSYNC          41
+#define RGB_PIN_NUM_DE             2
+#define RGB_PIN_NUM_PCLK           3
+//B
+#define RGB_PIN_NUM_DATA0          8
+#define RGB_PIN_NUM_DATA1          7
+#define RGB_PIN_NUM_DATA2          6
+#define RGB_PIN_NUM_DATA3          5
+#define RGB_PIN_NUM_DATA4          4
+//G
+#define RGB_PIN_NUM_DATA5          14
+#define RGB_PIN_NUM_DATA6          13
+#define RGB_PIN_NUM_DATA7          12
+#define RGB_PIN_NUM_DATA8          11
+#define RGB_PIN_NUM_DATA9          10
+#define RGB_PIN_NUM_DATA10         9
+//R
+#define RGB_PIN_NUM_DATA11         19
+#define RGB_PIN_NUM_DATA12         18
+#define RGB_PIN_NUM_DATA13         17
+#define RGB_PIN_NUM_DATA14         16
+#define RGB_PIN_NUM_DATA15         15
+
+#### ESP32-P4 and Touch Driver Wiring：
+i2c address: 0x5D/0x14.(The INT pin level during reset of the GT911 touch chip determines the device address.)
+
+INT Low Level(0x5D);
+
+INT High Level(0x14).
+
+<img width="749" height="452" alt="image" src="https://github.com/user-attachments/assets/93447f39-9268-4e71-bdb2-cea6d2ac844c" />
+
+
+Pin connection
+
+I2C1_SCL(IO46)
+I2C1_SDA(IO45)
+TP_INT_IO42(IO42)
+TP_RST(IO36)
+TP_RST_P12(STC8P1.2)
+
+#### ESP32-P4 and wireless module wiring pins：
+Output voltage: 3.3V Output current: 1A max. Use: The power supply communicates with the wireless module.
+
+<img width="1027" height="593" alt="image" src="https://github.com/user-attachments/assets/8e1fd67b-45ef-4cbb-b0ce-336bb0f622dc" />
+
+
+Pin connection
+
+
+#define RADIO_GPIO_CLK 26
+#define RADIO_GPIO_MISO 47
+#define RADIO_GPIO_MOSI 48
+
+#ifdef CONFIG_BSP_SX1262_ENABLED
+#define SX1262_GPIO_BUSY 29
+#define SX1262_GPIO_IRQ 31
+#define SX1262_GPIO_NRST 32
+#define SX1262_GPIO_NSS 30
+
+#ifdef CONFIG_BSP_NRF2401_ENABLED
+#define NRF24_GPIO_IRQ 29
+#define NRF24_GPIO_CE 31
+#define NRF24_GPIO_CS 32
+
+#### ESP32-P4 and Audio out：
+
+<img width="418" height="285" alt="image" src="https://github.com/user-attachments/assets/97d29343-41d2-4484-888c-21afcf0aaf00" />
+
+
+Pin connection
+
+
+I2S_LRCK(IO21);
+
+I2S_SCLK(IO22);
+
+I2S_SDOUT(IO23);  
+#### Function Selection
+When the DIP switch is set to position 1, the UART1 function is enabled. When switched to NO, the wireless module function is enabled.
+
+<img width="284" height="147" alt="image" src="https://github.com/user-attachments/assets/4e1076ef-36fb-44da-8537-09debcb073fd" />
+
+
+1	ON
+UART1	Wireless Module
 
 
