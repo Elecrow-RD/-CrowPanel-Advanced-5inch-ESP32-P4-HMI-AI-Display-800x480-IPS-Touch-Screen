@@ -113,42 +113,75 @@ RGB Pin connection
 
 
 // Refresh Rate = 18000000/(1+40+20+800)/(1+10+5+480) = 42Hz
+
 #define RGB_LCD_PIXEL_CLOCK_HZ     (18 * 1000 * 1000)
+
 #define RGB_LCD_H_RES              H_size
+
 #define RGB_LCD_V_RES              V_size
+
 #define RGB_LCD_HSYNC              4
+
 #define RGB_LCD_HBP                8
+
 #define RGB_LCD_HFP                8
+
 #define RGB_LCD_VSYNC              4
+
 #define RGB_LCD_VBP                16
+
 #define RGB_LCD_VFP                16
 
 #define RGB_PIN_NUM_DISP_EN        -1
+
 #define RGB_PIN_NUM_HSYNC          40
+
 #define RGB_PIN_NUM_VSYNC          41
+
 #define RGB_PIN_NUM_DE             2
+
 #define RGB_PIN_NUM_PCLK           3
+
 //B
+
 #define RGB_PIN_NUM_DATA0          8
+
 #define RGB_PIN_NUM_DATA1          7
+
 #define RGB_PIN_NUM_DATA2          6
+
 #define RGB_PIN_NUM_DATA3          5
+
 #define RGB_PIN_NUM_DATA4          4
+
 //G
+
 #define RGB_PIN_NUM_DATA5          14
+
 #define RGB_PIN_NUM_DATA6          13
+
 #define RGB_PIN_NUM_DATA7          12
+
 #define RGB_PIN_NUM_DATA8          11
+
 #define RGB_PIN_NUM_DATA9          10
+
 #define RGB_PIN_NUM_DATA10         9
+
 //R
+
 #define RGB_PIN_NUM_DATA11         19
+
 #define RGB_PIN_NUM_DATA12         18
+
 #define RGB_PIN_NUM_DATA13         17
+
 #define RGB_PIN_NUM_DATA14         16
+
 #define RGB_PIN_NUM_DATA15         15
 
 #### ESP32-P4 and Touch Driver Wiring：
+
 i2c address: 0x5D/0x14.(The INT pin level during reset of the GT911 touch chip determines the device address.)
 
 INT Low Level(0x5D);
@@ -161,9 +194,13 @@ INT High Level(0x14).
 Pin connection
 
 I2C1_SCL(IO46)
+
 I2C1_SDA(IO45)
+
 TP_INT_IO42(IO42)
+
 TP_RST(IO36)
+
 TP_RST_P12(STC8P1.2)
 
 #### ESP32-P4 and wireless module wiring pins：
@@ -176,18 +213,27 @@ Pin connection
 
 
 #define RADIO_GPIO_CLK 26
+
 #define RADIO_GPIO_MISO 47
+
 #define RADIO_GPIO_MOSI 48
 
 #ifdef CONFIG_BSP_SX1262_ENABLED
+
 #define SX1262_GPIO_BUSY 29
+
 #define SX1262_GPIO_IRQ 31
+
 #define SX1262_GPIO_NRST 32
+
 #define SX1262_GPIO_NSS 30
 
 #ifdef CONFIG_BSP_NRF2401_ENABLED
+
 #define NRF24_GPIO_IRQ 29
+
 #define NRF24_GPIO_CE 31
+
 #define NRF24_GPIO_CS 32
 
 #### ESP32-P4 and Audio out：
