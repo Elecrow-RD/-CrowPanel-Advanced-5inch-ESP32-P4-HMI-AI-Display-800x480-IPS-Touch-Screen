@@ -19,7 +19,7 @@
 | Development Environment                      | ESP-IDF、Arduino IDE                                         |
 | **Screen**                                   |                                                              |
 | Size                                         | 5.0 inch                                                     |
-| Resolution                                   | 1024*600                                                     |
+| Resolution                                   | 800*480                                                     |
 | Display Panel                                | IPS Panel                                                    |
 | Touch Panel                                  | Capacitive Touch, Single/5-point Touch                       |
 | Viewing Angle                                | 178°                                                         |
