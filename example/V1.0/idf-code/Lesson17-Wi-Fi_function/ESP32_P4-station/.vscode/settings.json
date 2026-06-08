@@ -1,0 +1,16 @@
+{
+  "idf.flashType": "UART",
+  "idf.openOcdConfigs": [
+    "board/esp32p4-builtin.cfg"
+  ],
+  "idf.portWin": "COM14",
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32p4"
+  },
+  "clangd.path": "j:\\My_APP\\IDF_MY\\TOOL\\tools\\esp-clang\\esp-18.1.2_20240912\\esp-clang\\bin\\clangd.exe",
+  "clangd.arguments": [
+    "--background-index",
+    "--query-driver=**",
+    "--compile-commands-dir=j:\\Advance-P4\\5_inch\\lesson\\Lesson17-Wi-Fi_function\\ESP32_P4-station\\build"
+  ]
+}
