@@ -1,0 +1,16 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.openOcdConfigs": [
+    "board/esp32p4-builtin.cfg"
+  ],
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32p4"
+  },
+  "idf.flashType": "UART",
+  "files.associations": {
+    "bsp_uart.h": "c",
+    "task.h": "c"
+  },
+  "idf.currentSetup": "E:\\CodeX_CcSwitch\\ESP-IDF\\.espressif\\v5.4.2\\esp-idf",
+  "idf.portWin": "COM54"
+}

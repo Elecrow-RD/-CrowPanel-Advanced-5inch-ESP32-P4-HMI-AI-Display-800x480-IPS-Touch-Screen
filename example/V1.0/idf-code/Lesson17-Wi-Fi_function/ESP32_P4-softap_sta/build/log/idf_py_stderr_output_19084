@@ -1,0 +1,1 @@
+warning: the default selection CONFIG_ESP_WIFI_AUTH_WPA2_WPA3_PSK (undefined) of <choice ESP_WIFI_SCAN_AUTH_MODE_THRESHOLD> (defined at E:/AI_Course/P4/IDF/Course_Code_5inch/Lesson17-Wi-Fi_function/ESP32_P4-softap_sta/main/Kconfig.projbuild:54) is not contained in the choice
