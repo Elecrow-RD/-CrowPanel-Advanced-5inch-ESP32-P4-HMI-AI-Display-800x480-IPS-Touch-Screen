@@ -1,0 +1,14 @@
+{
+  "idf.currentSetup": "E:\\ESP-IDF\\.espressif\\v5.5.4\\esp-idf",
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.openOcdConfigs": [
+    "board/esp32p4-builtin.cfg"
+  ],
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32p4",
+    "PYTHONUTF8": "1"
+  },
+  "idf.flashType": "UART",
+  "idf.buildPath": "E:\\ESP-IDF\\.builds\\${workspaceFolderBasename}",
+  "idf.portWin": "COM3"
+}

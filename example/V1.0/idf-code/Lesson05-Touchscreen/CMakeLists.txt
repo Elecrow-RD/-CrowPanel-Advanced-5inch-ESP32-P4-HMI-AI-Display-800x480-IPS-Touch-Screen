@@ -1,0 +1,11 @@
+# The following lines of boilerplate have to be in your project's CMakeLists
+# in this exact order for cmake to work correctly
+cmake_minimum_required(VERSION 3.16)
+
+# ESP-IDF 5.5 Kconfig writes UTF-8 metadata; force Python to decode it correctly
+# when the project path contains non-ASCII characters.
+set(ENV{PYTHONUTF8} 1)
+
+include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+set(EXTRA_COMPONENT_DIRS "peripheral")
+project(Lesson05)

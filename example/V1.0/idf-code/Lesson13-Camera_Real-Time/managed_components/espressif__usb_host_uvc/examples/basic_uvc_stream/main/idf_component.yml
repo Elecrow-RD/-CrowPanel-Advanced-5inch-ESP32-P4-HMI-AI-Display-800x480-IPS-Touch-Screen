@@ -1,0 +1,8 @@
+dependencies:
+  espressif/usb:
+    rules:
+    - if: idf_version >=5.4
+    version: '*'
+  espressif/usb_host_uvc:
+    version: '*'
+  idf: '>=5.0'

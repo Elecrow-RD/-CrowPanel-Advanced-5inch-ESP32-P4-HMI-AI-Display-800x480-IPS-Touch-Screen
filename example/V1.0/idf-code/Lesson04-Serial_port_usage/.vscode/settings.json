@@ -1,0 +1,24 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.openOcdConfigs": [
+    "board/esp32p4-builtin.cfg"
+  ],
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32p4",
+    "PYTHONUTF8": "1"
+  },
+  "idf.flashType": "UART",
+  "files.associations": {
+    "bsp_uart.h": "c",
+    "task.h": "c"
+  },
+  "idf.currentSetup": "E:\\ESP-IDF\\.espressif\\v5.5.4\\esp-idf",
+  "idf.portWin": "COM3",
+  "idf.buildPath": "E:\\ESP-IDF\\.builds\\${workspaceFolderBasename}",
+  "clangd.path": "E:\\ESP-IDF\\.espressif\\v5.5.4\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clangd.exe",
+  "clangd.arguments": [
+    "--background-index",
+    "--query-driver=**",
+    "--compile-commands-dir=e:\\-SEA\\new-lvgl9-5寸\\idf-code-5inch\\Lesson04-Serial_port_usage\\build"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "idf.flashType": "UART",
+  "idf.currentSetup": "E:\\ESP-IDF\\.espressif\\v5.5.4\\esp-idf",
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32p4",
+    "PYTHONUTF8": "1"
+  },
+  "clangd.path": "E:\\ESP-IDF\\.espressif\\v5.5.4\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clangd.exe",
+  "clangd.arguments": [
+    "--background-index",
+    "--query-driver=**",
+    "--compile-commands-dir=E:\\ESP-IDF\\.builds\\${workspaceFolderBasename}"
+  ],
+  "idf.portWin": "COM3",
+  "idf.openOcdConfigs": [
+    "board/esp32p4-builtin.cfg"
+  ],
+  "idf.buildPath": "E:\\ESP-IDF\\.builds\\${workspaceFolderBasename}"
+}

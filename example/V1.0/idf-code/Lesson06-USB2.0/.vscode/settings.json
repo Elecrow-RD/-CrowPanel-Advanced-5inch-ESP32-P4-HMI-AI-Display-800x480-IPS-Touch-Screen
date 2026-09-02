@@ -1,0 +1,24 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.openOcdConfigs": [
+    "board/esp32p4-builtin.cfg"
+  ],
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32p4",
+    "PYTHONUTF8": "1"
+  },
+  "idf.flashType": "UART",
+  "files.associations": {
+    "gpio.h": "c",
+    "task.h": "c",
+    "esp_lcd_touch_gt911.h": "c",
+    "bsp_i2c.h": "c",
+    "esp_log.h": "c",
+    "i2c_master.h": "c",
+    "freertos.h": "c",
+    "hid_device.h": "c"
+  },
+  "idf.currentSetup": "E:\\ESP-IDF\\.espressif\\v5.5.4\\esp-idf",
+  "idf.portWin": "COM3",
+  "idf.buildPath": "E:\\ESP-IDF\\.builds\\${workspaceFolderBasename}"
+}

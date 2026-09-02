@@ -1,0 +1,25 @@
+dependencies:
+  idf: '>=5.0'
+  usb:
+    public: true
+    rules:
+    - if: idf_version >=6.0
+    - if: target not in ["linux"]
+    version: ^1.0.0
+description: USB Host UVC driver
+files:
+  exclude:
+  - test_app
+  - host_test
+repository: git://github.com/espressif/esp-usb.git
+repository_info:
+  commit_sha: cc68af3b3e126b6c9e7797d0c59e908e7ad72f0c
+  path: host/class/uvc/usb_host_uvc
+targets:
+- esp32s2
+- esp32s3
+- esp32p4
+- esp32h4
+- linux
+url: https://github.com/espressif/esp-usb/tree/master/host/class/uvc/usb_host_uvc
+version: 2.4.2
