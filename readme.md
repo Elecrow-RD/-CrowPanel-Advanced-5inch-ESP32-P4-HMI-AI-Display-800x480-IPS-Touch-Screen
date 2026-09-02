@@ -67,7 +67,7 @@
 
 | Name | dependency library |
 | ---- | ------------------ |
-| LVGL | lvgl/lvgl@8.3.11   |
+| LVGL | lvgl/lvgl@9.1      |
 
 ### 5,Quick Start
 
