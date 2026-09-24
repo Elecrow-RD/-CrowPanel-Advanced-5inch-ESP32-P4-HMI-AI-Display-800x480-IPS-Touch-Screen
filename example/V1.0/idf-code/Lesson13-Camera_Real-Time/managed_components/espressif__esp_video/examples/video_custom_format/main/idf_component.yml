@@ -1,3 +1,0 @@
-dependencies:
-  esp_video: {}
-  idf: '>=5.3'
